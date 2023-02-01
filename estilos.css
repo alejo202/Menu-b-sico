@@ -1,0 +1,196 @@
+/*1   Para darle estilos a un div con id*/
+/*#container{
+	perspective: 800px; /Para darle perspectiva al objeto
+	margin: 200px auto; /Para darle margen al adiv
+	width: 50px; /Para darle ancho al div
+}
+*/
+
+
+/*Para darle estilos a un div con id*/
+/*#cubo{
+	transform-style: preserve-3d;  /Para darle un estilo especifico a la perspectiva
+	width: 500px; /Para darle un ancho al div
+	height: 500px; /Para darle una altura al div
+
+}*/
+
+
+/*Para darle estilos a un div con un clase*/
+/*.cara{
+	position: absolute; /Para darle una posicion al div
+	height: 500px; /Para darle una altura al div
+	width: 500px; / Para darle un ancho al div
+}*/
+
+/*Para darle estilos a un div con una clase*/
+/*.enfrente{
+	background-color: rgba(95,27,188,0.5); /Para darle un color de fondo al div
+	transform: translateZ(250px); /Para transformar el div y en este caso mover en el eje Z
+}*/
+
+
+/*Para darle estilos a un div con una clase*/
+/*.atras{
+	background-color: rgba(95,242,81,0.5); /Para darle un color de fondo al div
+	transform: translateZ(-250px); /Para transformar el div y en este caso mover en el eje Z pero negativo
+}*/
+
+
+/*Para darle estilos a un div con una clase*/
+/*.arriba{
+	background-color: rgba(95,188,27,0.5); /Para darle un color de fondo al div
+	transform: translateY(-250px) rotateX(90deg); /Para transformar el div y en este caso mover en el eje Y y rotar en X
+}*/
+
+
+/*Para darle estilos a un div con una clase*/
+/*.abajo{
+	background-color: rgba(95,81,244,0.5); /Para darle un color de fondo al div
+	transform: translateZ(250px) rotateX(90deg); /Para transformar el div y en este caso mover en el eje Z pero negativo y rotar en X
+}*/
+
+
+/*Para darle estilos a un div con una clase*/
+/*.izquierda{
+	background-color: rgba(201,54,122,0.5); /Para darle un color de fondo al div
+	transform: translateX(-250px) rotateY(90deg); /Para transformar el div y en este caso mover en el eje X pero negativo y rotar en Y
+
+}*/
+
+
+/*Para darle estilos a un div con una clase*/
+/*.derecha{
+	background-color: rgba(196,201,54,0.5); /Para darle un color de fondo al div
+	transform: translateX(250px) rotateY(90deg); /Para transformar el div y en este caso mover en el eje X y rotar en Y
+}*/
+
+
+
+
+
+
+
+/*2   Para darle estilos al cuerpo
+body{
+	background-color: #632432; /Para darle un color al fondo
+	font-family: Arial; /La tipografía del body
+}*/
+
+
+/*para darle estilos a un div con un id
+#main-container{
+	margin: 150px auto; / Para darle margenes al div
+	width: 600px; /Para darle un ancho al div
+
+}*/
+
+
+/*Para darle estilos a la tabla
+table{
+	background-color: white; /Para darle un color de fondo al div
+	text-align: left; /Para alinear el texto del div
+	border-collapse: collapse; /Se utiliza para fusionar los bordes
+	width: 100%; /Para darle un ancho al div
+}*/
+
+
+/*Para ddarle estilos a las filas de la tabla
+th, td{
+	padding: 20px; /Para generar espacio entre elementos
+}*/
+
+
+/*Para darle estilos al encabezado de la tabla
+thead{
+	background-color: #246355; /Para darle un color de fondo al diva
+	border-bottom: solid 5px #0f362d; Para darle solo borde a la parte de abajo del div
+	color: white; /Color de la letra del div
+}*/
+
+
+/*representa el patrón para los elementos coincidentes.
+tr:nth-child(even){
+	background-color: #ddd; /Darle color al fondo al patron
+
+}*/
+
+
+/*Para darle estilos al momento que se pasa el mouse encima del div
+tr:hover td{
+	background-color: #369681; /Para darle color al fondo del div
+	color: white; /Color de la letra del div
+}*/
+
+
+
+
+
+
+/*3   Para darle estilos al cuerpo*/
+body{
+	font-family: Arial, Helvetica, sans-serif; /*Para nombrar las tipografias del body*/
+	font-size: 20px; /*Tamaño de la letra*/
+	padding: 0; /*Para generar espaciado entre elementos*/
+	margin: 0; /*Para gneerar margenes al div*/
+}
+
+/*para darle estilos a un div con un id*/
+#menu{
+	background-color: black; /*Para darle un color de fondo al div*/
+}
+
+/*para darle estilos a una lista no organizada dentor de un div con id*/
+#menu ul{
+	list-style: none; /*Para darle estilo a la lista*/
+	margin: 0; /*Para darle margen a la lista*/
+	padding: 20px 30px; /*Para generarle espaciado entre elementos*/
+
+}
+
+
+/*para darle estilos a cada uno de los elementos de la lista dentro de un div con id*/
+#menu li{
+	display: inline; /*Modo de visualización en los dispositivos*/
+	margin: 0; /*Para generar margenes al div*/
+}
+
+
+
+/*Para darle estilos a los links de cada uno de los elementos de la lista dentro de un div con id*/
+#menu li a{
+	color: white; /*Para darle color a la letra*/
+	padding: 20px 30px; /*Para geerar espaciado entre elementos*/
+	text-decoration: none; /*Para darle decoracion al texto*/
+}
+
+/*Para darle estilos a los vinculos cuando se pasa el mouse encima*/
+#menu li a:hover{
+	background-color: cornflowerblue; /*Para darle un color de fondo al div*/
+	color: white; /*Para darle color al texto*/
+}
+
+
+/*Para que sea responsive*/
+@media screen and (max-width: 747px){
+	#menu ul{
+		padding: 0; /*Para quitarle el espaciado cuando se disminuya el tamaño de la pantalla*/
+	}
+	#menu ul li{
+		margin-right: -3px;  /*Para quitarle margen izquierda*/
+		display: inline-block; /*Modo de visualizacion en los dispositivos*/
+		text-align: center; /*Para centrar el texto*/
+		width: 33%; /*Para darle un ancho*/
+	}
+	#menu li a{
+		display: list-item; /*Modo de visualizacion en los dispositivos*/
+	}
+}
+
+
+/*Para que sea responsive*/
+@media screen and (max-width: 480px){
+	#menu ul li{
+		width: 100%; /*Cuando la pantalla sea de 480px, el ancho sea 100%*/
+	}
+}
